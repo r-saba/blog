@@ -5,7 +5,7 @@ title: "Why Gatsby js ?"
 keywords: "gatsby, javascript, react, static website, why gatsby js"
 ---
 
-In a world with so many JavaScript frameworks such as React, Vue, heck even Next, why Gatsby? The short answer is, none of those frameworks are the target market of Gatsby.
+In a world with so many JavaScript frameworks such as React, Vue, heck even Next, why Gatsby? Because none of those frameworks do what Gatsby does.
 
 <h2>Speed, that's why!</h2>
 
