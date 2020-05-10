@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/reponame",
+  pathPrefix: "/blog",
   siteMetadata: {
     title: `Web Development Blog`,
     description: `Come along the journey to become a better web developer and learn as much as possible. Learn about programming, freelancing and web consulting.`,
