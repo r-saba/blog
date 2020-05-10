@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
 html {
-  font-family: sans-serif;
+  font-family: "Open Sans";
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -219,6 +220,12 @@ img {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Open Sans" !important;
 }
 h1 {
   margin-left: 0;
@@ -615,8 +622,24 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+main {
+  height: 100vh;
+  min-height: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+
+  footer {
+    margin-top: -25px;
   }
 }

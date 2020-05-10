@@ -1,0 +1,17 @@
+.blog-post {
+  max-width: 1080px;
+  margin: auto;
+}
+
+.blog-title {
+  display: flex;
+  align-items: center;
+}
+
+.blog-title img {
+  height: 30px;
+}
+
+.blog-title h1 {
+  flex: 1;
+}
