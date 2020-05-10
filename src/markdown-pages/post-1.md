@@ -1,5 +1,5 @@
 ---
-path: "/blog/why-gatsby"
+path: "/why-gatsby"
 date: "2020-05-09"
 title: "Why Gatsby js ?"
 keywords: "gatsby, javascript, react, static website, why gatsby js"

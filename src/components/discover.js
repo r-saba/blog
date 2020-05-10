@@ -7,7 +7,7 @@ const Discover = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        markdownRemark(frontmatter: { path: { eq: "/blog/why-gatsby" } }) {
+        markdownRemark(frontmatter: { path: { eq: "/why-gatsby" } }) {
           html
           excerpt(pruneLength: 280)
           frontmatter {
