@@ -1,0 +1,17 @@
+h1 {
+  color: #f5efe1;
+  font-family: Monoton !important;
+  font-weight: 400;
+}
+
+.index-container {
+  height: 100vh;
+  background-color: black;
+}
+
+.index-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
