@@ -29,27 +29,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        fonts: [
-          {
-            family: `Open Sans`,
-            variants: [`400`, `700`],
-          },
-          {
-            family: `Open Sans`,
-            subsets: [`latin`],
-          },
-        ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          `Monoton\:400, 400i, 700, 700i`
-        ],
-        display: 'swap'
+        google: {
+          families: ['Monoton']
+        }
       }
     },
     {
