@@ -2,7 +2,6 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import "./blogTemplate.css"
 import returnSVG from "../images/return.svg"
-import SEO from "../components/seo"
 import { Helmet } from "react-helmet"
 
 export default function Template({
