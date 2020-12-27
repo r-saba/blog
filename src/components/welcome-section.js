@@ -15,11 +15,13 @@ const WelcomeSection = () => {
       };
 
     return (
-        <div className="index-content">
-            <h1>Ragith's</h1>
-            <h1>Mind</h1>
-            <Lottie style={{width: "fit-content"}} options={defaultOptions} height={100} width={400}/>
+      <div className="welcome-container">
+        <div className="welcome-content">
+            <h1 className="welcome-text">Ragith's</h1>
+            <h1 className="welcome-text">Mind</h1>
+            <Lottie options={defaultOptions} height={100} width={400}/>
         </div>
+      </div>
     )
 }
 
