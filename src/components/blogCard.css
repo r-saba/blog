@@ -1,0 +1,37 @@
+.blog-card-container {
+  margin: 0 1.25rem 1.25rem 1.25rem;
+  padding: 1.25rem 0;
+  background-color: white;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+article {
+  color: black;
+}
+
+.blog-card-title {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Permanent Marker";
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 0.625rem;
+}
+.article-date {
+  font-size: 12px;
+}
+.blog-card-excerpt {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.blog-card-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  .blog-card-title {
+    font-size: 1.5rem;
+  }
+}

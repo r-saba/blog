@@ -1,10 +1,14 @@
 import React from "react"
 import SEO from "../components/seo"
 
-import { WelcomeSection } from "../components"
+import { WelcomeSection, Discover } from "../components"
 
 const IndexPage = () => (
-    <WelcomeSection />
+    <div>
+        <SEO title="Ragith's Mind"/>
+        <WelcomeSection />
+        <Discover />
+    </div>
 )
 
 export default IndexPage

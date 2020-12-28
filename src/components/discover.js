@@ -1,39 +1,38 @@
-import { useStaticQuery, Link } from "gatsby"
 import React from "react"
+import BlogCard from "./blogCard"
+
+import { graphql, useStaticQuery, Link } from "gatsby"
+
 import "./discover.css"
 
 const Discover = () => {
   const data = useStaticQuery(
     graphql`
-      query {
-        markdownRemark(frontmatter: { path: { eq: "/why-gatsby" } }) {
-          html
-          excerpt(pruneLength: 280)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            path
-            title
+      query MyQuery {
+        allMarkdownRemark(sort: {order: DESC, fields: frontmatter___date}) {
+          edges {
+            node {
+              frontmatter {
+                path
+                title
+                date
+              }
+              excerpt
+            }
           }
         }
       }
     `
   )
+  const blogs = data.allMarkdownRemark.edges;
+
+  const blogCards = blogs.map((blog) => <BlogCard key={blog.node.frontmatter.title} path={blog.node.frontmatter.path} date={blog.node.frontmatter.date} title={blog.node.frontmatter.title} excerpt={blog.node.excerpt} />)
+
+
   return (
-    <Link
-      to={data.markdownRemark.frontmatter.path}
-      className="article-card-link"
-    >
-      <section>
-        <article>
-          <h2 className="article-title">
-            {data.markdownRemark.frontmatter.title}
-          </h2>
-          <p className="article-date">{data.markdownRemark.frontmatter.date}</p>
-          <p className="article-excerpt">{data.markdownRemark.excerpt}</p>
-          READ MORE
-        </article>
-      </section>
-    </Link>
+    <section className="section-discover">
+      {blogCards}
+    </section>
   )
 }
 
