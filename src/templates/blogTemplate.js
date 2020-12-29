@@ -8,7 +8,7 @@ export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html, excerpt } = markdownRemark
+  const { frontmatter, html } = markdownRemark
   return (
     <>
       <Helmet
@@ -21,7 +21,7 @@ export default function Template({
       <div className="blog-post-container">
         <div className="blog-post">
           <Link to="/" className="template-chevron-link">
-            <img src={returnSVG} className="template-chevron-icon"></img>
+            <img src={returnSVG} className="template-chevron-icon" alt="left arrow"></img>
           </Link>
           <div className="blog-title">
             <h1>{frontmatter.title}</h1>

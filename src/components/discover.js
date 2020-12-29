@@ -1,7 +1,7 @@
 import React from "react"
 import BlogCard from "./blogCard"
 
-import { graphql, useStaticQuery, Link } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 import "./discover.css"
 
