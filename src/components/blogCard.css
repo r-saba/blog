@@ -1,6 +1,6 @@
 .blog-card-container {
   margin: 0 1.25rem 1.25rem 1.25rem;
-  padding: 1.25rem 0;
+  padding: 1.25rem 0.325rem;
   background-color: white;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
   border: 1px solid black;
@@ -14,16 +14,13 @@ article {
 .blog-card-title {
   font-size: 1.5rem;
   text-align: center;
-  font-family: "Permanent Marker";
   text-align: center;
-  font-weight: 400;
   margin-bottom: 0.625rem;
 }
 .article-date {
   font-size: 12px;
 }
 .blog-card-excerpt {
-  font-size: 1rem;
   text-align: center;
 }
 
@@ -32,8 +29,23 @@ article {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 800px) {
+  .blog-card-container {
+    max-width: 50rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding: 2.5rem;
+  }
+
   .blog-card-title {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .blog-card-excerpt {
+    text-align: left;
   }
 }
