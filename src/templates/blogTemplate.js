@@ -20,13 +20,16 @@ export default function Template({
       ></Helmet>
       <div className="blog-post-container">
         <div className="blog-post">
+          <Link to="/" className="template-chevron-link">
+            <img src={returnSVG} className="template-chevron-icon"></img>
+          </Link>
           <div className="blog-title">
-            <Link to="/">
-              <img src={returnSVG}></img>
-            </Link>
             <h1>{frontmatter.title}</h1>
           </div>
-          <h2>{frontmatter.date}</h2>
+          <div className="blog-frontmatter">
+            <p className="blog-date">{frontmatter.date}</p>
+            <p className="blog-keywords">{frontmatter.keywords}</p>
+          </div>
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
