@@ -32,7 +32,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Monoton', 'Permanent Marker', 'Overpass']
+          families: ['Permanent Marker', 'Overpass']
         }
       }
     },

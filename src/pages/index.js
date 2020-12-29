@@ -1,6 +1,6 @@
 import React from "react"
 import SEO from "../components/seo"
-
+import "../fonts/typography.css"
 import "./index.css"
 
 import { WelcomeSection, Discover } from "../components"
