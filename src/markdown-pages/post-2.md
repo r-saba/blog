@@ -1,15 +1,12 @@
 ---
-path: "/typescript"
-date: "2020-12-27"
-title: "My Typescript Experience"
-keywords: "typescript, javascript, es6"
+path: "/blog-performance"
+date: "2020-12-29"
+title: "Fonts are Fat!"
+keywords: "fonts, http, performance"
 ---
 
-I've been working with typescript for sometime now. Initially it seemed like a step back from everything that brought me into JavaScript. The ease with which I could just declare a variable and use it. Not concerning myself with what the type had to be exactly.
+Revamping my blog was relatively straight forward. I just took the existing logic, added some CSS, a few new fonts and boom... my website was slower than my first program which had 4 nested inner loops...
 
-I've been working with typescript for sometime now. Initially it seemed like a step back from everything that brought me into JavaScript. The ease with which I could just declare a variable and use it. Not concerning myself with what the type had to be exactly.
+<h2>My (current) Solution</h2>
 
-```javascript
-var s = "JavaScript syntax highlighting"
-alert(s)
-```
+I was using the `gatsby-plugin-web-font-loader` which would fetch my google fonts asynchronously. The home section font is used only once. I realized it would be more efficient to deploy the app with the font locally. Especially since it's the first font that needs to be loaded. This resolved the issue. Now the page is loaded with the correct font. Unlike previously where, while the font was being fetched, the page would load with some default browser font.
