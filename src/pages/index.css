@@ -19,6 +19,12 @@ h1 {
   text-align: center;
 }
 
+code {
+  background-color: {
+    rgba(27,31,35,0.05)
+  };
+}
+
 @media only screen and (min-width: 800px) {
   body {
     font-size: 1.25rem;
