@@ -13,7 +13,7 @@ Unforunately, you can spend thousands of hours becoming a great developer and st
 
 <h2>PRAMP</h2>
 
-[PRAMP](http://pramp.com/) is an online platform in which you are paired up with another developer and you both take turns interviewing each other. This is great to practice data structures and algorithms but they also have behaviour and system design as well. When you are paired up, each participant is given a problem as well as hints and solutions to be used while interviewing your peer. Once you've both completed the interview there is a feedback form at the end. This platform helped me become comfortable solving algorithm problems in an interview setting but I also made some amazing connections all over the world!
+[PRAMP](http://pramp.com/) is an online platform in which you are paired up with another developer and you both take turns interviewing each other. This is great to practice data structures and algorithms but they have behavioural and system design as well. When you are paired up, each participant is given a problem as well as hints and solutions to be used while interviewing your peer. Once you've both completed the interview there is a feedback form at the end. This platform helped me become comfortable solving algorithm problems in an interview setting but I also made some amazing connections all over the world!
 
 <h2>Leetcode</h2>
 
