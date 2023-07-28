@@ -4,7 +4,7 @@ date: "2021-02-21"
 title: "I Solemly Swear to return a promise"
 keywords: "JavaScript, promises, async, await"
 ---
-
+`async`
 I recently found out that `async` functions will return a promise implicitly. I've been returning promises explicitly for as long as I can remember and I've never had a linter complain. So I read the [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) and this is what I learned.
 
 <h2>Wait, Don't await!</h2>
